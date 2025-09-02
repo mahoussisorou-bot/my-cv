@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafb;
+  color: #333;
+  padding: 20px 20%;
+  line-height: 1.5;
+}
+
+/* Main container */
+.structure {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+/* Titles */
+.structure .title {
+  text-align: center;
+  background: linear-gradient(90deg, #2eb7c9, #05323a63);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.structure .name {
+  text-align: center;
+  background: #e0f2fe;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Profile Image */
+.structure img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 20px auto;
+  object-fit: cover;
+  border: 4px solid #2563eb;
+}
+
+/* Content layout */
+.cv_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 20px;
+}
+
+.person_info {
+  width: 25%;
+}
+
+.diplome {
+  width: 60%;
+}
+
+/* Section titles */
+h2 {
+  color: #2563eb;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+/* Info section */
+.info_content p {
+  margin: 6px 0;
+}
+
+.info_content a {
+  color: #06b6d4;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.info_content a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Container for diplomas/experience */
+.container {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.container:last-child {
+  border-bottom: none;
+}
+
+.container .lieu h4 {
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.container .lieu p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.container .year {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f97316;
+}
+
+/* Loisir section */
+.contain p {
+  display: inline-block;
+  background: #e0f2fe;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+/* Footer */
+.foot {
+  text-align: left;
+  font-weight: 500;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Hover effect */
+.container:hover {
+  background: #f1f6f7;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+  padding-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  .cv_content {
+    flex-direction: column;
+  }
+  .person_info, .diplome {
+    width: 100%;
+  }
+  .structure img {
+    width: 140px;
+    height: 140px;
+  }
+}
